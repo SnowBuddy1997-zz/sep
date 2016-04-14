@@ -1,0 +1,5 @@
+1. create a c++ programm that creates text filed maze
+2. the created maze schould be read inline
+3. load and save the maze into the file
+4. Exception handling -- if something is wrong with the programm it schould write error down
+5. prompt and command -- load save, show, ... (in our classes) implement in our classes
