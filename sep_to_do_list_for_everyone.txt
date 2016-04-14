@@ -1,0 +1,7 @@
+1. create a c++ programm that creates text filed maze -- Youvileyris
+2. the created maze schould be read inline -- Youvileyris
+3. load and save the maze into the file -- Josip
+4. Exception handling -- if something is wrong with the programm it schould write error down -- Josip
+5. prompt and command -- load save, show, ... (in our classes) implement in our classes -- prompt(Youvileyris) command(everyone)
+6. Coordinations (fastmove,...) -- Mirza
+7. Special fields -- Youvileyris
