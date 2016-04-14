@@ -1,0 +1,59 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+
+using namespace std;
+void function1(void);
+
+
+int main(void) {
+// This part of code creates and saves the maze in .txt file called maze 
+        ofstream maze_;
+
+        maze_.open("maze.txt");
+        maze_ << "################################\n";
+        maze_ << "################################\n";
+        maze_ << "##  ### ##  ##     #####  ######\n";
+        maze_ << "##  ##  ##  ## ### ###  ########\n";
+        maze_ << "##########  ##  #  ###   ##   ##\n";
+        maze_ << "##########  ##  #  ###   ##   ##\n";
+        maze_ << "##              # ####        ##\n";
+        maze_ << "##           ## #  ######   # ##\n";
+        maze_ << "##          #####         ### ##\n";
+        maze_ << "################################\n";
+        maze_ << "################################\n";
+        maze_.close();
+
+        std::cout << "\n\t" << std::endl;
+        std::cout << "\n\t" << std::endl;
+        std::cout << "\n\t" << std::endl;
+        std::cout << "\n\t" << std::endl;
+// here we have the jump to a function where the code says that the maze schould be shown
+        function1();
+
+        std::cin.get();
+
+        return 0;
+
+}
+
+
+void function1(void) {
+// code to show function on the screen
+    string line;
+
+    ifstream maze_ ("maze.txt");
+
+    if (maze_.is_open())
+  {
+    while ( getline (maze_,line) )
+    {
+      cout << line << '\n';
+    }
+    maze_.close();
+  }
+
+  else cout << "Unable to open file";
+
+}
